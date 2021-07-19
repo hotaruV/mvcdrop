@@ -1,4 +1,5 @@
 <?php
+require_once "src/Libreries/Core/mysql.php";
 class homeModel extends Mysql
 {
     public function __construct()
@@ -35,6 +36,6 @@ class homeModel extends Mysql
     }
 
     public function deleteRol(){
-        
+
     }
 }
