@@ -5,14 +5,8 @@ class Home extends Controllers{
        parent::__construct();
     }
     public function home(){
-        echo "Hola Chango";
-    }
-    public function saludar($params){
-        echo "Saludo numero: ". $params;
-    }
-    public function carrito($params){
-        $carrito = $this->model->getCarrito($params);
-        echo $carrito;
+        $this->views->getView($this, 'Home');
     }
     
+        
 }
