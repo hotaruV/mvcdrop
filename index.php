@@ -21,12 +21,8 @@ if(!empty($arrUrl[2])){
     }
 }
 
-spl_autoload_register(function($class){
-    if(file_exists('src/Libreries/Core/'.$class.".php")){
-        require_once('src/Libreries/Core/'.$class.".php");
-    }
-});
-require_once("./src/Libreries/Core/Load.php");
+require_once("src/Libreries/Core/Autoload.php");
+require_once("src/Libreries/Core/Load.php");
 
 
 

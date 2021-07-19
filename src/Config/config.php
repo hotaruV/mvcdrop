@@ -1,8 +1,8 @@
 <?php
 date_default_timezone_set('America/Mexico_City');
 const PRODUCCION = false;
-const LIBS = "./Libreries";
-const VIEWS = "../views";
+const LIBS = "src/Libreries/Core/";
+const VIEWS = "Views";
 
 if (PRODUCCION) {
     define('BASE_URL', "");
@@ -14,7 +14,7 @@ if (PRODUCCION) {
 }else{
     define('BASE_URL', "http://localhost/drops__framework/original_framework/");
     define('DB_HOST', "localhost");
-    define('DB_NAME', "temporal1");
+    define('DB_NAME', "proyect_mvc");
     define('DB_USER', "root");
     define('DB_PASSWORD', "");
     define('DB_CHARSET', "utf8");
