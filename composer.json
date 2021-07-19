@@ -1,0 +1,9 @@
+{
+    "name": "hotaruv/dropframework",
+    "autoload": {
+        "psr-4": {
+            "Hotaruv\\Dropframework\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
