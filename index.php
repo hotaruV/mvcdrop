@@ -26,8 +26,9 @@ spl_autoload_register(function($class){
         require_once('src/Libreries/Core/'.$class.".php");
     }
 });
-
+$controller = ucwords($controller);
 $controllerFile = "app/Controllers/".$controller."Controller.php";
+echo $controllerFile;
 if(file_exists($controllerFile)){ 
     require_once($controllerFile);
     $controller = new $controller;
