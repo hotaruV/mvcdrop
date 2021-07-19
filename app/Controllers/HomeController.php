@@ -5,7 +5,7 @@ class Home extends Controllers{
        parent::__construct();
     }
     public function home(){
-        $this->views->getView($this, 'Home');
+        $this->views->getView($this, 'home');
     }
     
         
