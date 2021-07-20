@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('America/Mexico_City');
-const PRODUCCION = true;
+const PRODUCCION = false;
 const LIBS = "src/Libreries/Core/";
 const VIEWS = "Views";
 
@@ -12,7 +12,7 @@ if (PRODUCCION) {
     define('DB_PASSWORD', "Lu~d?>d2&");
     define('DB_CHARSET', "utf8");
 }else{
-    define('BASE_URL', "http://localhost/drops__framework/original_framework/");
+    define('BASE_URL', "http://localhost/drop");
     define('DB_HOST', "localhost");
     define('DB_NAME', "proyect_mvc");
     define('DB_USER', "root");

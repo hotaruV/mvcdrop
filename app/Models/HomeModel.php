@@ -1,6 +1,6 @@
 <?php
 require_once "src/Libreries/Core/mysql.php";
-class homeModel extends Mysql
+class HomeModel extends Mysql
 {
     public function __construct()
     {

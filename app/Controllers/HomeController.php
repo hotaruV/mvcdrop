@@ -9,9 +9,9 @@ class Home extends Controllers
     public function home()
     {
         $data = [
-            "tag_pages" => 'Home',
-            "pages_title" => 'Página Principal',
-            "pages_name" => 'home'
+            "tag_pages" => 'Turismo Hacia las Bahamas',
+            "pages_title" => 'Bienvenido a tu próximo destino',
+            "pages_name" => 'Turismo Hacia las Bahamas'
 
         ];
         $this->views->getView($this, 'home', $data);
