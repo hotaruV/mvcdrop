@@ -30,7 +30,7 @@ function cargando() {
                     })
                     .then(function (res) {
                         if(res.msg=='ok'){
-                            location.href = base_url+'/home/home'
+                            location.href = base_url+'/dashboard'
                         }
                     })
                     .catch(function (err) {

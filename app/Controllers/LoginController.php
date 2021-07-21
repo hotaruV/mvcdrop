@@ -3,6 +3,10 @@ class Login extends Controllers{
     public function __construct()
     {
         session_start();
+        if(isset($_SESSION['login'])){
+            header('Location: '.Utils::base_url().'/');
+        }
+        
         parent::__construct();
     }
 
@@ -30,6 +34,10 @@ class Login extends Controllers{
                     if($arrData['status'] == 2){
                         $_SESSION['id'] = $arrData['id'];
                         $_SESSION['login'] = true;
+                        $arrData = $this->model->session_login($_SESSION['id']);
+                        $_SESSION['usuario'] = $arrData;
+
+
                         $arrResponse = ['status' => true, 'msg'=> 'ok'];
                     }else{
                         $arrResponse = ['status' => false, 'msg'=> 'cuenta desactivada'];
@@ -39,6 +47,13 @@ class Login extends Controllers{
             echo json_encode($arrResponse, JSON_UNESCAPED_UNICODE);
         }
        
+    }
+
+    public function logout(){
+        session_start();
+        session_unset();
+        session_destroy();
+        Utils::redirect('./');
     }
 
     public function registro(){

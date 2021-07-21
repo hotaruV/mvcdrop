@@ -12,6 +12,7 @@
 <body>
     <h1 style="font-size: 4em;"><?= $data['pages_title'] ?></h1>
     <p style="font-size: 2em;"><?= $data['pages_name'] ?></p>
+    <?php Utils::dd($_SESSION['usuario']) ?>
 
 </body>
 <?php require_once 'scripts.php' ?>

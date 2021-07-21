@@ -7,6 +7,10 @@ class Utils
         return BASE_URL;
     }
 
+    static function dbard()
+    {
+        return BASE_URL."/public/";
+    }
     static function js()
     {
         return BASE_URL."/public/js/";
@@ -19,6 +23,34 @@ class Utils
     {
         return BASE_URL."/public/img/";
     }
+    static function header($data = ""){
+        $view_header = "Views/Template/header.php";
+        require_once $view_header;
+    }
+    static function navbar($data = ""){
+        $view_header = "Views/Template/navbar.php";
+        require_once $view_header;
+    }
+    static function menu($data = ""){
+        $view_menu = "Views/Template/menu.php";
+        require_once $view_menu;
+    }
+    static function footer($data = ""){
+        $view_menu = "Views/Template/footer.php";
+        require_once $view_menu;
+    }
+    static function scripts($data = ""){
+        $view_menu = "Views/Template/scripts.php";
+        require_once $view_menu;
+    }
+
+    static function scriptPersonales($data = ""){
+        $view_menu = "Views/Template/scriptspersonales.php";
+        require_once $view_menu;
+    }
+
+    
+
     static function dd($data)
     {
         $format = print_r('<pre>');
@@ -106,6 +138,13 @@ class Utils
             echo '<meta http-equiv="refresh" content="0;url=' . $url . '" />';
             echo '</noscript>';
             exit;
+        }
+    }
+
+    public static function loginSession(){
+        session_start();
+        if(empty($_SESSION['login'])){
+            header('Location: '.Utils::base_url().'/login');
         }
     }
     public static  function CalcularTiempo($fechaInicio)

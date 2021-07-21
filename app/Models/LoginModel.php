@@ -23,6 +23,13 @@ class LoginModel  extends Mysql
         return $req;
     }
 
+    public function session_login(int $id){
+        $sql = "select u.id, r.nombre as 'rol', u.nombre, u.apellido_pa, u.apellido_ma, u.telefono, u.email, u.token, u.status from users u ";
+        $sql .= "inner join roles r on r.id = u.rol_id where u.id = $id";
+        return $req = $this->select($sql);
+        
+    } 
+
     public function crearUsuario()
     {
         $usr = "faotqm@hotmail.com";
