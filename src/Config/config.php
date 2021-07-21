@@ -1,11 +1,11 @@
 <?php
 date_default_timezone_set('America/Mexico_City');
-const PRODUCCION = false;
+const PRODUCCION = true;
 const LIBS = "src/Libreries/Core/";
 const VIEWS = "Views";
 
 if (PRODUCCION) {
-    define('BASE_URL', "");
+    define('BASE_URL', "http://mvcdrop.hospitalolga.com");
     define('DB_HOST', "localhost");
     define('DB_NAME', "u784873018_proyect_mvc");
     define('DB_USER', "u784873018_hotaruV");
