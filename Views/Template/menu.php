@@ -60,7 +60,7 @@
           </li>
           <li>
             <a data-toggle="collapse" href="#pagesExamples">
-              <i class="now-ui-icons design_image"></i>
+              <i class="now-ui-icons users_single-02"></i>
               <p>
                 Usuarios <b class="caret"></b>
               </p>
@@ -74,7 +74,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="../../examples/pages/rtl.html">
+                  <a href="<?=Utils::base_url()?>/roles">
                     <span class="sidebar-mini-icon">R</span>
                     <span class="sidebar-normal"> Roles </span>
                   </a>
@@ -85,7 +85,7 @@
 
           <li>
             <a data-toggle="collapse" href="#pagesExamples">
-              <i class="now-ui-icons design_image"></i>
+              <i class="now-ui-icons text_bold"></i>
               <p>
                 Blog <b class="caret"></b>
               </p>

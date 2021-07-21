@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', cargando);
 function cargando() {
     if (document.querySelector('#formLogin')) {
         let formLogin = document.querySelector('#formLogin');
+        
         formLogin.onsubmit = (e) => {
             e.preventDefault();
             let strEmail = document.querySelector('#loginEmail').value;

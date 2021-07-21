@@ -11,7 +11,7 @@ class Dashboard extends Controllers {
             "pages_id" => 1,
             "tag_tag" => 'Panel de Administración',
             "tag_pages" => 'Panel de Administración',
-            "pages_title" => 'Bienvenido a tu próximo destino',
+            "pages_title" => 'Panel Inicial',
             "panel_option" => 'Inicio'
         ];
         $this->views->getView($this, 'index', $data);

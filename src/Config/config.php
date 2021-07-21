@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('America/Mexico_City');
-const PRODUCCION = true;
+const PRODUCCION = false;
 const LIBS = "src/Libreries/Core/";
 const VIEWS = "Views";
 
