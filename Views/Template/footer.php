@@ -30,4 +30,5 @@
         </div>
     </div>
 </footer>
-<?php Utils::scripts() ?>
+
+<?php Utils::scripts($data) ?>

@@ -40,7 +40,12 @@
   <script src="<?= Utils::dbard()?>assets/js/now-ui-dashboard.min.js?v=1.6.0" type="text/javascript"></script><!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   
 
-  <?php Utils::scriptPersonales() ?>
+  <?php Utils::scriptPersonales($data) ?>
+
+  <script>
+        const base_url = '<?= Utils::base_url() ?>';
+    </script>
+    <?php require_once './Views/scripts.php' ?>
 </body>
 
 </html>

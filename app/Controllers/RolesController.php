@@ -12,7 +12,8 @@ class Roles extends Controllers {
             "tag_tag" => 'Roles Usuario',
             "tag_pages" => 'rol usuario',
             "pages_title" => 'Roles Usuario',
-            "panel_option" => ''
+            "panel_option" => '',
+            'pages_function_js' => 'roles_functions.js'
         ];
         $this->views->getView($this, 'roles', $data);
     }
