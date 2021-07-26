@@ -296,7 +296,6 @@ nav-tabs .nav-item.show .nav-link,
 .formulario {
   width: 90%;
   margin: 0 auto;
-  margin: 100px;
 }
 
 .formulario__contenido {
@@ -311,6 +310,7 @@ nav-tabs .nav-item.show .nav-link,
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
+
 .reserva__form__obj,
 .reserva__form {
   display: flex;
@@ -323,7 +323,7 @@ input {
   border: 1px solid #bfbfbf;
   outline: none;
   border-radius: 25px;
-  padding: 20px;
+  padding-left: 20px;
 }
 textarea {
   width: 100%;
@@ -438,4 +438,314 @@ textarea {
 }
 .hide {
   visibility: hidden;
+}
+
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+.responsive{
+  display: none;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media (max-width: 991px) {
+	.hero__image{
+    width: 100%;
+  }
+  .header__content{
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header__title{
+    font-size: 1.2em;
+  }
+
+  .destino{
+    width: 90%;
+  }
+  .destino__titulo{
+    font-size: 1em;
+  }
+  .destino__texto{
+    font-size: .3em;
+  }
+  .destino__contenedor{
+    flex-direction: column;
+  }
+  .titulo{
+    padding: 10px;
+  }
+
+  .porque__contenedor{
+    
+    flex-direction: column;
+  }
+  .banner{
+    height: 40vh;
+    background: url(../img/foto1.webp);
+    background-size: cover;
+    background-position-y: -44px;
+    background-attachment: unset;
+  }
+  .banner__titulo{
+    font-size: 1.8rem;
+  }
+  .banner__contenedor{
+    height: 80px;
+  }
+
+  .banner__contenedor__texto{
+    width: 90%;
+  }
+  .banner__texto {
+    font-size: 1rem;
+  }
+  .recomendacion__titulo{
+    font-size: 1.6em;
+  }
+  .recomendacion__contenedor{
+    flex-direction: column;
+    height: 70px;
+  }
+  .recomendacion__card{
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .recomendacion__img {
+    width: 85%;
+    
+  }
+
+  .titulos {
+    padding: 0px 0px;
+  }
+
+  .pregunta__card{
+    flex-direction: column;
+  }
+  .pregunta__texto {
+    font-size: 0.5em;
+  }
+
+  .formulario {
+    margin:  0 auto;
+  }
+
+  .formulario__registro__grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+ 
+
+  .reserva__form:nth-child(1) {
+    grid-column-start: span 2;
+  }
+  .reserva__form:nth-child(2) {
+    grid-column-start: span 2;
+  }
+  .reserva__form:nth-child(3) {
+    grid-column-start: span 2;
+  }
+  .reserva__form:nth-child(4) {
+    grid-column-start: span 2;
+  }
+  .reserva__form:nth-child(5) {
+    grid-column-start: span 2;
+  }
+  .reserva__form:nth-child(6) {
+    grid-column-start: span 2;
+  }
+  .reserva__form:nth-child(7) {
+    grid-column-start: span 2;
+  }
+  .reserva__form:nth-child(8) {
+    grid-column-start: span 2;
+  }
+  .reserva__form:nth-child(9) {
+    grid-column-start: span 2;
+  }
+  .reserva__form:nth-child(10) {
+    grid-column-start: span 2;
+  }
+  .reserva__form:nth-child(11) {
+    grid-column-start: span 2;
+  }
+  .reserva__form:nth-child(12) {
+    grid-column-start: span 2;
+  }
+
+
+  .reserva__form__obj:nth-child(1){
+    grid-column-start: span 2;
+  }
+  
+  .reserva__form__obj:nth-child(2){
+    grid-column-start: span 2;
+  }
+  .reserva__form__obj:nth-child(3){
+    grid-column-start: span 2;
+  }
+  
+  .reserva__form__obj:nth-child(4){
+    grid-column-start: span 2;
+  }
+  .reserva__form__obj:nth-child(5){
+    grid-column-start: span 2;
+  }
+  .reserva__form__obj:nth-child(6){
+    grid-column-start: span 2;
+  }
+  .reserva__form__obj:nth-child(7){
+    grid-column-start: span 2;
+  }
+  .reserva__form__obj:nth-child(8){
+    grid-column-start: span 2;
+  }
+  .reserva__form__obj:nth-child(9){
+    grid-column-start: span 2;
+  }
+  .reserva__form__obj:nth-child(10){
+    grid-column-start: span 2;
+  }
+  .reserva__form__obj:nth-child(11){
+    grid-column-start: span 2;
+  }
+
+  .footer{
+  }
+
+  .footer__imagen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer__titulo {
+    
+    flex-direction: column;
+    
+  }
+
+  .footer__lista {
+    margin: 0 30px;
+  }
+
+  
+  
+
 }

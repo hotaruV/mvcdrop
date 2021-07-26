@@ -7,8 +7,17 @@ class HomeModel extends Mysql
         parent::__construct();
     }
 
-    public function getDestinos(){
-        $sql = "Select * from pais_destino";
+    public function getPaises()
+    {
+        $sql = "Select * from paises order by id asc";
+        $request = $this->select_all($sql);
+        return $request;
+    }
+
+    public function getDestinos()
+    {
+        $sql = "select pd.nombre as 'pais', d.descripcion, d.imagen from destinos d ";
+        $sql .= "inner join paises pd on pd.id = d.pais_id ;";
         $request = $this->select_all($sql);
         return $request;
     }
@@ -41,7 +50,7 @@ class HomeModel extends Mysql
         return $request;
     }
 
-    public function deleteRol(){
-
+    public function deleteRol()
+    {
     }
 }
