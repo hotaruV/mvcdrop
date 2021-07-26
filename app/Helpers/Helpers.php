@@ -23,6 +23,12 @@ class Utils
     {
         return BASE_URL."/public/img/";
     }
+
+    static function destinos()
+    {
+        return BASE_URL."/public/img/destinos/";
+    }
+
     static function header($data = ""){
         $view_header = "Views/Template/header.php";
         require_once $view_header;

@@ -7,6 +7,12 @@ class HomeModel extends Mysql
         parent::__construct();
     }
 
+    public function getDestinos(){
+        $sql = "Select * from pais_destino";
+        $request = $this->select_all($sql);
+        return $request;
+    }
+
     public function setRol(string $nombre, string $descripcion)
     {
         $query_insert = "insert into roles (nombre, descripcion, created_at) values ('$nombre', '$descripcion', now()) ";
