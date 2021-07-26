@@ -580,7 +580,7 @@ textarea {
     font-size: 1em;
   }
   .destino__texto{
-    font-size: .3em;
+    font-size: 1rem;
   }
   .destino__contenedor{
     flex-direction: column;
@@ -601,7 +601,7 @@ textarea {
     background-attachment: unset;
   }
   .banner__titulo{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .banner__contenedor{
     height: 80px;
@@ -614,7 +614,7 @@ textarea {
     font-size: 1rem;
   }
   .recomendacion__titulo{
-    font-size: 1.6em;
+    font-size: 1rem;
   }
   .recomendacion__contenedor{
     flex-direction: column;
@@ -638,7 +638,7 @@ textarea {
     flex-direction: column;
   }
   .pregunta__texto {
-    font-size: 0.5em;
+    font-size: 1rem;
   }
 
   .formulario {
@@ -744,6 +744,10 @@ textarea {
   .footer__lista {
     margin: 0 30px;
   }
+
+  .footer__item {
+    font-size: 1rem;
+}
 
   
   
