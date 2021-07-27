@@ -13,10 +13,10 @@ if (PRODUCCION) {
     define('DB_CHARSET', "utf8");
 }else{
     define('BASE_URL', "http://localhost/drop");
-    define('DB_HOST', "localhost");
-    define('DB_NAME', "proyect_mvc");
-    define('DB_USER', "root");
-    define('DB_PASSWORD', "");
+    define('DB_HOST', "70.32.23.81");
+    define('DB_NAME', "flyselec_proyect_mvc");
+    define('DB_USER', "flyselec_hotaruv");
+    define('DB_PASSWORD', "LCzY60+]vsb6");
     define('DB_CHARSET', "utf8");
 }
 const SPD = "."; //separador de decimales
