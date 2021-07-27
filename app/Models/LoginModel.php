@@ -1,5 +1,4 @@
 <?php
-require_once "src/Libreries/Core/mysql.php";
 class LoginModel  extends Mysql
 {
     private $id;
